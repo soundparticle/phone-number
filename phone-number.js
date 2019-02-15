@@ -2,8 +2,9 @@ class PhoneNumber  {
     constructor() {
         this.number = number;
     }
+    
     Number() {
-        
+
     }
 };
 
