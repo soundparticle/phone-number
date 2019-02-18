@@ -1,5 +1,4 @@
 import { PhoneNumber } from './phone-number';
-
 describe('PhoneNumber()', () => {
   test('cleans the number', () => {
     const phone = new PhoneNumber('(223) 456-7890');

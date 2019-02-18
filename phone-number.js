@@ -3,11 +3,11 @@ class PhoneNumber  {
         this.number = number;
     }
     
-    Number() {
+    number() {
 
     }
 };
 
-mudule.exports = {
+module.exports = {
     PhoneNumber
 }
