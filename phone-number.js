@@ -4,8 +4,11 @@ class PhoneNumber {
     }
     
     number() {
-        console.log('* in number() *', this.phone.replace(/[^\d]/g, ''));
-        return this.phone.replace(/[^\d]/g, '');
+        let cleaned = this.phone.replace(/[^\d]/g, '');
+        if(cleaned.length === 9) return null;
+        return cleaned;
+        
+        console.log('* in number() *', this.phone.length);   
     }
 };
 

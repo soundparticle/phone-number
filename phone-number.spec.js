@@ -5,17 +5,17 @@ describe('PhoneNumber()', () => {
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xtest('cleans numbers with dots', () => {
+  test('cleans numbers with dots', () => {
     const phone = new PhoneNumber('223.456.7890');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xtest('cleans numbers with multiple spaces', () => {
+  test('cleans numbers with multiple spaces', () => {
     const phone = new PhoneNumber('223 456   7890   ');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xtest('invalid when 9 digits', () => {
+  test('invalid when 9 digits', () => {
     const phone = new PhoneNumber('223456789');
     expect(phone.number()).toEqual(null);
   });
