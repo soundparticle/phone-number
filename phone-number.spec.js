@@ -40,7 +40,7 @@ describe('PhoneNumber()', () => {
     expect(phone.number()).toEqual(null);
   });
 
-  xtest('invalid with letters', () => {
+  test('invalid with letters', () => {
     const phone = new PhoneNumber('223-abc-7890');
     expect(phone.number()).toEqual(null);
   });
