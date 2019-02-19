@@ -25,17 +25,17 @@ describe('PhoneNumber()', () => {
     expect(phone.number()).toEqual(null);
   });
 
-  xtest('valid when 11 digits and starting with 1', () => {
+  test('valid when 11 digits and starting with 1', () => {
     const phone = new PhoneNumber('12234567890');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xtest('valid when 11 digits and starting with 1 even with punctuation', () => {
+  test('valid when 11 digits and starting with 1 even with punctuation', () => {
     const phone = new PhoneNumber('+1 (223) 456-7890');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xtest('invalid when 12 digits', () => {
+  test('invalid when 12 digits', () => {
     const phone = new PhoneNumber('322234567890');
     expect(phone.number()).toEqual(null);
   });
