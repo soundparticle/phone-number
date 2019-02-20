@@ -45,12 +45,12 @@ describe('PhoneNumber()', () => {
     expect(phone.number()).toEqual(null);
   });
 
-  xtest('invalid with punctuations', () => {
+  test('invalid with punctuations', () => {
     const phone = new PhoneNumber('223-@:!-7890');
     expect(phone.number()).toEqual(null);
   });
 
-  xtest('invalid if area code starts with 0 or 1', () => {
+  test('invalid if area code starts with 0 or 1', () => {
     const phone1 = new PhoneNumber('(023) 456-7890');
     const phone2 = new PhoneNumber('(123) 456-7890');
     expect(phone1.number()).toEqual(null);
