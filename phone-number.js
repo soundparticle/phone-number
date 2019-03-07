@@ -9,19 +9,12 @@ class PhoneNumber {
         let fourthNum = cleaned.substring(1).charAt(3);
         
         if(cleaned.length === 11 && cleaned.startsWith('1')) {
-            // if (firstNum < 2 || fourthNum < 2)
-            // return null;
-            // else return cleaned.substring(1);
             return ((firstNum < 2 || fourthNum < 2) ? null : cleaned.substring(1));
         }
 
         if(cleaned.length !== 10) 
         return null;
         
-        // else if(cleaned.startsWith('0') || cleaned.startsWith('1') || cleaned.startsWith('0', 3) || cleaned.startsWith('1', 3))
-        // return null;
-
-        // else return cleaned;
         return ((cleaned.startsWith('0') || cleaned.startsWith('1') || cleaned.startsWith('0', 3) || cleaned.startsWith('1', 3)) ? null : cleaned);
     }
 };
