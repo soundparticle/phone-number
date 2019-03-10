@@ -15,7 +15,13 @@ class PhoneNumber {
         if(cleaned.length !== 10) 
         return null;
         
-        return ((cleaned.startsWith('0') || cleaned.startsWith('1') || cleaned.startsWith('0', 3) || cleaned.startsWith('1', 3)) ? null : cleaned);
+        return ((
+            cleaned.startsWith('0') 
+            || cleaned.startsWith('1') 
+            || cleaned.startsWith('0', 3) 
+            || cleaned.startsWith('1', 3)) 
+            ? null : cleaned
+        );
     }
 };
 
